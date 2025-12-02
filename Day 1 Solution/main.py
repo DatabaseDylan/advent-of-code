@@ -25,7 +25,7 @@ if __name__ == "__main__":
         turn_direction = combination[0]
         direction_count = int(combination[1:])
 
-        #if the value is larger than 100, we can trim off the excess so we can avoid any type of recursion
+        # if the value is larger than 100, we can trim off the excess so we can avoid any type of recursion
         if direction_count > 100:
             direction_count = int(str(direction_count)[-2:])
         
