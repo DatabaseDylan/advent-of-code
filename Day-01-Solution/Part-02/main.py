@@ -5,14 +5,14 @@ def spin_dial(current_number:int, turn_direction: str, direction_count: int, com
         if current_number < 0:
             current_number += 100
             # avoid double counting
-            if current_number != 0 and original_number !=0:
+            if current_number != 0 and original_number != 0:
                 completed_rotations += 1
     elif turn_direction == 'R':
         current_number += direction_count
         if current_number > 99:
             current_number -= 100
             # avoid double counting
-            if current_number != 0 and original_number !=0:
+            if current_number != 0 and original_number != 0:
                 completed_rotations +=1
     else:
         print('Uh oh.. Santa is not happy...')
